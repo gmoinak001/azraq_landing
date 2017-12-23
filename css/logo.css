@@ -6241,8 +6241,9 @@ fieldset[disabled] .btn {
 margin-top: 4px;
   float: left;
   padding: 8px;
-  width: 500px;
+  width: 670px;
   padding-left: 50px;
+    margin-left: 79px;
 }
 #beta {
   float: left;

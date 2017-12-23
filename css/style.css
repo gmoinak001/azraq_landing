@@ -1,6 +1,7 @@
 .profile-text{
     color: white;
-    float: right;
+    float: left;
+    margin-right: 15px;
     font-size: 18px;
 }
 .plunker-profile{

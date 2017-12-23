@@ -28,24 +28,54 @@
 		<nav class="navbar navbar-static-top">
             <div id="mySidenav" class="sidenav">
                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                      <a href="#">About</a>
-                      <a href="#">Services</a>
-                      <a href="#">Clients</a>
-                      <a href="#">Contact</a>
-                    </div>
+                <a href="#">
+                    <img src="resource/pro-pic.jpg" width="30px" height="30px" class="img-circle">
+                        <label class="profile-text">&nbsp;&nbsp;{{user.name}}</label></a>
+                <hr>
+                <a href="#">Dashboard &nbsp;&nbsp;<span class="glyphicon glyphicon-dashboard"></span></a>
+                <a href="#">Market &nbsp;&nbsp;<span class="glyphicon glyphicon-screenshot"></span></a>
+                <a href="#">Orders &nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span></a>
+                <a href="#">Balance &nbsp;&nbsp;<span class="glyphicon glyphicon-hourglass"></span></a>
+                <a href="#">ICO &nbsp;&nbsp;<span class="glyphicon glyphicon-bullhorn"></span></a>
+                <a href="#">Settings &nbsp;&nbsp;<span class="glyphicon glyphicon-wrench"></span></a>
+                <a href="#">Log Out &nbsp;&nbsp;<span class="glyphicon glyphicon-log-out"></span></a>
+            </div>
                     <span style="font-size:30px;cursor:pointer; float: left; margin-top: 7px; margin-left: 25px;" onclick="openNav()">
-                        <img src="resource/menu.png" style="width: 24px; height: 20px; margin-top: 11px; margin-left: 25px;">
+                        <img src="resource/menu.png" style="width: 24px; height: 17px; margin-top: 13px; margin-left: 25px;">
                     </span>
 			<div class="container-fluid">
 				<div class="pull-left">
-					<a href="/">
-						<img src="resource/azraq_logo.png" style="
+					 <a href="/" class="home">
+						<img class = "logohome" src="resource/azraq_logo.png" style="
                             float: left;
+                            position: fixed;
                             height: 35px;
-                            margin-left: 45px;
-                            margin-top: 13px;">
+                            margin-right: 45px;
+                            margin-top: 13px;
+                            margin-right: 25px;
+                            margin-left: 40px;">
 					</a>
-
+                    <div class="notification" style="
+                    float: left;
+                    margin-left: 173px;
+                    margin-top: 19px;">
+                    <a href="/" class="notification">
+                        <img class = "notificationbell" src="resource/notification.png" style="
+                            height: 22px;
+                            width: 22px;">
+                    </a>
+                    </div>
+                    
+                    <div class="notification" style="
+                    float: left;
+                    margin-left: 33px;
+                    margin-top: 19px;">
+                    <a href="/" class="notification">
+                        <img class = "notificationbell" src="resource/plus.png" style="
+                            height: 22px;
+                            width: 22px;">
+                    </a>
+                    </div>
 					<!--<div id="beta">
 						<a href="#/!"><input class="btn btn-side disabled" value="Beta"></a>
 					</div>-->
@@ -53,21 +83,11 @@
              				<div id="scuboid">
                         			<input class="form-control" placeholder="Search here..">
                 			</div>
+                    
+                   
 				</div>
                 
-                <div class="pull-right dropdown">
-                    <div class="plunker-profile"  onclick="myFunction()">
-                        <img src="resource/pro-pic.jpg" width="30px" height="30px" class="img-circle">
-                        <label class="profile-text">&nbsp;&nbsp;{{user.name}}&nbsp;<span class="caret"></span></label>
-                    </div>
-
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="/">Dashboard&nbsp;&nbsp;<span class="glyphicon glyphicon-dashboard"></span></a>
-                        <a href="#">My profile&nbsp;&nbsp;<span class="glyphicon glyphicon-user"></span></a>
-                        <a href="#">Logout&nbsp;&nbsp;<span class="glyphicon glyphicon-log-out"></span></a>
-                    </div>
-                </div>
-            
+                
             </div>
         </nav>
         <br><br><br>
