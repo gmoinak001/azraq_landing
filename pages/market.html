@@ -1,0 +1,139 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+	<head>
+		<title>{{user.name}}-Profile</title>
+        <link rel="icon" href="../resource/favicon.gif" type="image/x-icon" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/logo.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/sidenavstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover({
+                placement : 'right',
+                trigger : 'hover'
+            });
+        });
+        </script>
+        <style type="text/css">
+            .infopop{
+                margin: 150px 50px;
+            }
+        </style>
+	</head>
+
+	<body style="margin-top: 54px;">
+		<nav class="navbar navbar-static-top">
+            <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">
+                    <img src="../resource/pro-pic.jpg" width="30px" height="30px" class="img-circle">
+                        <label class="profile-text">&nbsp;&nbsp;{{user.name}}</label></a>
+                <a href="#">Edit Profile &nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span></a>
+                <hr>
+                <a href="../index.html">Dashboard &nbsp;&nbsp;<span class="glyphicon glyphicon-dashboard"></span></a>
+                <a href="./market.html">Market &nbsp;&nbsp;<span class="glyphicon glyphicon-screenshot"></span></a>
+                <a href="./orders.html">Orders &nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span></a>
+                <a href="./balance.html">Balance &nbsp;&nbsp;<span class="glyphicon glyphicon-hourglass"></span></a>
+                <a href="./ico.html">ICO &nbsp;&nbsp;<span class="glyphicon glyphicon-bullhorn"></span></a>
+                <a href="./settings.html">Settings &nbsp;&nbsp;<span class="glyphicon glyphicon-wrench"></span></a>
+                <a href="#">Log Out &nbsp;&nbsp;<span class="glyphicon glyphicon-log-out"></span></a>
+            </div>
+                    <span style="font-size:30px;cursor:pointer; float: left; margin-top: 7px; margin-left: 25px;" onclick="openNav()">
+                        <img src="../resource/menu.png" style="width: 24px; height: 17px; margin-top: 13px; margin-left: 25px;">
+                    </span>
+			<div class="container-fluid">
+				<div class="pull-left">
+					 <a href="/" class="home">
+						<img class = "logohome" src="../resource/azraq_logo.png" style="
+                            float: left;
+                            position: fixed;
+                            height: 35px;
+                            margin-right: 45px;
+                            margin-top: 13px;
+                            margin-right: 25px;
+                            margin-left: 40px;">
+					</a>
+                    <div class="notification" style="
+                    float: left;
+                    margin-left: 173px;
+                    margin-top: 19px;">
+                    <a href="/" class="notification">
+                        <img class = "notificationbell" src="../resource/notification.png" style="
+                            height: 22px;
+                            width: 22px;">
+                    </a>
+                    </div>
+                    
+                    <div class="notification" style="
+                    float: left;
+                    margin-left: 33px;
+                    margin-top: 19px;">
+                    <a href="/" class="notification">
+                        <img class = "notificationbell" src="../resource/plus.png" style="
+                            height: 22px;
+                            width: 22px;">
+                    </a>
+                    </div>
+					<!--<div id="beta">
+						<a href="#/!"><input class="btn btn-side disabled" value="Beta"></a>
+					</div>-->
+
+             				<div id="scuboid">
+                        			<input class="form-control" placeholder="Search here..">
+                			</div>
+                    
+                   
+				</div>
+                
+                    <div class="pull-right dropdown">
+                    <div class="plunker-profile"  onclick="myFunction()">
+                        <img src="../resource/pro-pic.jpg" width="30px" height="30px" class="img-circle">
+                        <label class="profile-text">&nbsp;&nbsp;{{current.pool}}&nbsp;<span class="caret"></span></label>
+                    </div>
+
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./market.html">New Pool&nbsp;&nbsp;<span class="glyphicon glyphicon-plus-sign"></span></a>
+                        <a href="#">Position&nbsp;&nbsp;<span class="glyphicon glyphicon-globe"></span></a>
+                        <a href="#">Pool Forum&nbsp;&nbsp;<span class="glyphicon glyphicon-comment"></span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br><br><br>
+        
+		<h2>Market-watch page</h2>            
+            <!--<br><br><br><br><br><br><br><br><br><br><br><br>-->
+        <footer>
+            <h5> <b>We are in beta! We would love to hear your feedback.</b></h5>
+        </footer>
+    </body>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.plunker-profile')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+        //this is for the navbar
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</html>
+
