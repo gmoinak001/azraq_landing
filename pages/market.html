@@ -24,7 +24,7 @@
         </style>
 	</head>
 
-	<body style="margin-top: 54px;">
+	<body style="margin-top: 54px; background-color: #EEEEEE;">
 		<nav class="navbar navbar-static-top">
             <div id="mySidenav" class="sidenav">
                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -142,9 +142,32 @@
                   </div>
                 </div>
                 
-              <li class="list-group-item">Ethereum <img src="../resource/coin-faces/ethereum_logo.png" style="width: 25px; height: 25px;">
+              <li class="list-group-item" data-toggle="modal" data-target="#myModal1">Ethereum <img src="../resource/coin-faces/ethereum_logo.png" style="width: 25px; height: 25px;">
                   <button type="button" class="btn btn-success" style="margin-left: 206px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
                   <span class="badge">Blocks left: 5,112,00,00,000</span><span class="badge">+1,250&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></span><span class="badge">Block Height: 22,108,689,450,653,120</span></li> 
+                 <!--Modal-->
+                <div id="myModal1" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ethereum</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Ethereum Market projections</p>
+                          <img src="../resource/ethereum_projection.png" style="height: 385px; width: 500px;">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" style="margin-left: 225px;">Buy</button> 
+                        <button type="button" class="btn btn-danger" style="margin-left: 45px; margin-right: 45px;">Sell</button>  
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               <li class="list-group-item">Dash Coin <img src="../resource/coin-faces/dashcoin_logo.png" style="width: 25px; height: 25px;">
                   <button type="button" class="btn btn-success" style="margin-left: 207px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
                   <span class="badge">Blocks left: 1,000,250,130,745</span><span class="badge">-2,551&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></span><span class="badge">Block Height: 9,450,653,120</span></li>
@@ -168,8 +191,94 @@
         </div>    
           </div>
           <div id="menu1" class="tab-pane fade">
-            <h3>Menu 2</h3>
-            <p>Mining pools.</p>
+            <br>  
+            <div class="pool_table"  style="height: 450px; width: 1300px; overflow-y: auto; margin-left: 25px;">  
+            <div class="table-hover">          
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Pool Name</th>
+                    <th>Pool Hashrate</th>
+                    <th>Top Hasher</th>
+                    <th>Coin</th>  
+                    <th>Join Pool</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Minergate  <img src="../resource/pool-faces/minergate_logo.png" style="width: 25px; height: 30px;"></td>
+                    <td>12.8 Th/s</td>
+                    <td>0x24jkflrefo234ljnfrefjeofijo2432435dffgrdsgg0: 14.2 Kh/s</td>
+                    <td><img src="../resource/coin-faces/Bitcoin_Logo.png" style="height: 25px; width: 25 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                  <tr>
+                    <td>Hashflare.io <img src="../resource/pool-faces/hashflare_logo.png" style="width: 30px; height: 30px;"></td>
+                    <td>12.09 Th/s</td>
+                    <td>0x8237289fijoierhfoiej28930928fhiehoieuhei28: 16.8 Kh/s</td>
+                    <td><img src="../resource/coin-faces/ethereum_logo.png" style="height: 30px; width: 30 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                  <tr>
+                    <td>Minergate  <img src="../resource/pool-faces/minergate_logo.png" style="width: 25px; height: 30px;"></td>
+                    <td>12.8 Th/s</td>
+                    <td>0x24jkflrefo234ljnfrefjeofijo2432435dffgrdsgg0: 14.2 Kh/s</td>
+                    <td><img src="../resource/coin-faces/Bitcoin_Logo.png" style="height: 25px; width: 25 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                  <tr>
+                    <td>Hashflare.io <img src="../resource/pool-faces/hashflare_logo.png" style="width: 30px; height: 30px;"></td>
+                    <td>12.09 Th/s</td>
+                    <td>0x8237289fijoierhfoiej28930928fhiehoieuhei28: 16.8 Kh/s</td>
+                    <td><img src="../resource/coin-faces/ethereum_logo.png" style="height: 30px; width: 30 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                    <tr>
+                    <td>Minergate  <img src="../resource/pool-faces/minergate_logo.png" style="width: 25px; height: 30px;"></td>
+                    <td>12.8 Th/s</td>
+                    <td>0x24jkflrefo234ljnfrefjeofijo2432435dffgrdsgg0: 14.2 Kh/s</td>
+                    <td><img src="../resource/coin-faces/Bitcoin_Logo.png" style="height: 25px; width: 25 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                  <tr>
+                    <td>Hashflare.io <img src="../resource/pool-faces/hashflare_logo.png" style="width: 30px; height: 30px;"></td>
+                    <td>12.09 Th/s</td>
+                    <td>0x8237289fijoierhfoiej28930928fhiehoieuhei28: 16.8 Kh/s</td>
+                    <td><img src="../resource/coin-faces/ethereum_logo.png" style="height: 30px; width: 30 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                    <tr>
+                    <td>Minergate  <img src="../resource/pool-faces/minergate_logo.png" style="width: 25px; height: 30px;"></td>
+                    <td>12.8 Th/s</td>
+                    <td>0x24jkflrefo234ljnfrefjeofijo2432435dffgrdsgg0: 14.2 Kh/s</td>
+                    <td><img src="../resource/coin-faces/Bitcoin_Logo.png" style="height: 25px; width: 25 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                  <tr>
+                    <td>Hashflare.io <img src="../resource/pool-faces/hashflare_logo.png" style="width: 30px; height: 30px;"></td>
+                    <td>12.09 Th/s</td>
+                    <td>0x8237289fijoierhfoiej28930928fhiehoieuhei28: 16.8 Kh/s</td>
+                    <td><img src="../resource/coin-faces/ethereum_logo.png" style="height: 30px; width: 30 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                    <tr>
+                    <td>Minergate  <img src="../resource/pool-faces/minergate_logo.png" style="width: 25px; height: 30px;"></td>
+                    <td>12.8 Th/s</td>
+                    <td>0x24jkflrefo234ljnfrefjeofijo2432435dffgrdsgg0: 14.2 Kh/s</td>
+                    <td><img src="../resource/coin-faces/Bitcoin_Logo.png" style="height: 25px; width: 25 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                  <tr>
+                    <td>Hashflare.io <img src="../resource/pool-faces/hashflare_logo.png" style="width: 30px; height: 30px;"></td>
+                    <td>12.09 Th/s</td>
+                    <td>0x8237289fijoierhfoiej28930928fhiehoieuhei28: 16.8 Kh/s</td>
+                    <td><img src="../resource/coin-faces/ethereum_logo.png" style="height: 30px; width: 30 px;"></td>  
+                    <td><span class="glyphicon glyphicon-plus-sign"></span></td>  
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>    
           </div>
         </div>
 		
