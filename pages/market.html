@@ -33,7 +33,7 @@
                         <label class="profile-text">&nbsp;&nbsp;{{user.name}}</label></a>
                 <a href="#">Edit Profile &nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span></a>
                 <hr>
-                <a href="../index.html">Dashboard &nbsp;&nbsp;<span class="glyphicon glyphicon-dashboard"></span></a>
+                <a href="/">Dashboard &nbsp;&nbsp;<span class="glyphicon glyphicon-dashboard"></span></a>
                 <a href="./market.html">Market &nbsp;&nbsp;<span class="glyphicon glyphicon-screenshot"></span></a>
                 <a href="./orders.html">Orders &nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span></a>
                 <a href="./balance.html">Balance &nbsp;&nbsp;<span class="glyphicon glyphicon-hourglass"></span></a>
@@ -102,9 +102,78 @@
                 </div>
             </div>
         </nav>
-        <br><br><br>
+        <br>
+        <!--the site body-->
         
-		<h2>Market-watch page</h2>            
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Cryptocoin Exchange</a></li>
+          <li><a data-toggle="tab" href="#menu1">Mining Pools</a></li>
+        </ul>
+
+        <div class="tab-content">
+          
+          <div id="home" class="tab-pane fade in active">
+            <br><br>
+                <div class="coin list" >
+            <ul class="list-group" style="margin-left: 32px; height: 413px; width: 1300px; overflow-y: auto;">
+              <li class="list-group-item" data-toggle="modal" data-target="#myModal">Bitcoin <img src="../resource/coin-faces/Bitcoin_Logo.png" style="width: 25px; height: 25px;"> <button type="button" class="btn btn-success" style="margin-left: 225px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 12,00,00,000</span><span class="badge">+4,500&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></span><span class="badge">Block Height: 8,689,450,653,120</span></li>
+                <!--Modal-->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Bitcoin</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Bitcoin Market projections</p>
+                          <img src="../resource/bitcoin_projection.png" style="height: 385px; width: 500px;">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" style="margin-left: 225px;">Buy</button> 
+                        <button type="button" class="btn btn-danger" style="margin-left: 45px; margin-right: 45px;">Sell</button>  
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                
+              <li class="list-group-item">Ethereum <img src="../resource/coin-faces/ethereum_logo.png" style="width: 25px; height: 25px;">
+                  <button type="button" class="btn btn-success" style="margin-left: 206px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 5,112,00,00,000</span><span class="badge">+1,250&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></span><span class="badge">Block Height: 22,108,689,450,653,120</span></li> 
+              <li class="list-group-item">Dash Coin <img src="../resource/coin-faces/dashcoin_logo.png" style="width: 25px; height: 25px;">
+                  <button type="button" class="btn btn-success" style="margin-left: 207px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 1,000,250,130,745</span><span class="badge">-2,551&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></span><span class="badge">Block Height: 9,450,653,120</span></li>
+                <li class="list-group-item">Bitcoin <img src="../resource/coin-faces/Bitcoin_Logo.png" style="width: 25px; height: 25px;"> <button type="button" class="btn btn-success" style="margin-left: 225px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 12,00,00,000</span><span class="badge">+4,500&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></span><span class="badge">Block Height: 8,689,450,653,120</span></li>
+              <li class="list-group-item">Ethereum <img src="../resource/coin-faces/ethereum_logo.png" style="width: 25px; height: 25px;">
+                  <button type="button" class="btn btn-success" style="margin-left: 206px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 5,112,00,00,000</span><span class="badge">+1,250&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></span><span class="badge">Block Height: 22,108,689,450,653,120</span></li> 
+              <li class="list-group-item">Dash Coin <img src="../resource/coin-faces/dashcoin_logo.png" style="width: 25px; height: 25px;">
+                  <button type="button" class="btn btn-success" style="margin-left: 207px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 1,000,250,130,745</span><span class="badge">-2,551&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></span><span class="badge">Block Height: 9,450,653,120</span></li>
+                <li class="list-group-item">Bitcoin <img src="../resource/coin-faces/Bitcoin_Logo.png" style="width: 25px; height: 25px;"> <button type="button" class="btn btn-success" style="margin-left: 225px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 12,00,00,000</span><span class="badge">+4,500&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></span><span class="badge">Block Height: 8,689,450,653,120</span></li>
+              <li class="list-group-item">Ethereum <img src="../resource/coin-faces/ethereum_logo.png" style="width: 25px; height: 25px;">
+                  <button type="button" class="btn btn-success" style="margin-left: 206px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 5,112,00,00,000</span><span class="badge">+1,250&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></span><span class="badge">Block Height: 22,108,689,450,653,120</span></li> 
+              <li class="list-group-item">Dash Coin <img src="../resource/coin-faces/dashcoin_logo.png" style="width: 25px; height: 25px;">
+                  <button type="button" class="btn btn-success" style="margin-left: 207px;">Buy</button> <button type="button" class="btn btn-danger" style="margin-left: 45px;">Sell</button>
+                  <span class="badge">Blocks left: 1,000,250,130,745</span><span class="badge">-2,551&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></span><span class="badge">Block Height: 9,450,653,120</span></li>
+            </ul>
+        </div>    
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Mining pools.</p>
+          </div>
+        </div>
+		
+        
             <!--<br><br><br><br><br><br><br><br><br><br><br><br>-->
         <footer>
             <h5> <b>We are in beta! We would love to hear your feedback.</b></h5>
